@@ -9,7 +9,7 @@
         android:id="@+id/list_item_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Strontium84"
+        android:text="@string/list_item_default_text"
         android:background="@drawable/round_rectangle"
         android:textColor="@android:color/black"
         android:textSize="14sp"

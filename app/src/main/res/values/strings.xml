@@ -29,5 +29,6 @@ announcements.
     <string name="password">Password</string>
     <string name="password_default_value">dga</string>
     <string name="rules_amp_regulation_section_title"><![CDATA[Rules & Regulation]]></string>
+    <string name="list_item_default_text">Strontium84</string>
 
 </resources>

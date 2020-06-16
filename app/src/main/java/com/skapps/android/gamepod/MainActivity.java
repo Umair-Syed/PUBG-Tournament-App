@@ -24,6 +24,9 @@ import com.github.aakira.expandablelayout.ExpandableLinearLayout;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Created by Syed Umair on 16/06/2020.
+ */
 public class MainActivity extends AppCompatActivity {
 
     private int playerCount = 3;
@@ -66,11 +69,11 @@ public class MainActivity extends AppCompatActivity {
         TextView membersTV = (TextView)view;
         if(!mTeamMembersOpen){
             membersTV.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_up_24, 0);
-            recyclerView.setVisibility(View.VISIBLE);
+            AnimationUtils.expand(recyclerView);
             mTeamMembersOpen = true;
         }else{
             membersTV.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_down, 0);
-            recyclerView.setVisibility(View.GONE);
+            AnimationUtils.collapse(recyclerView);
             mTeamMembersOpen = false;
         }
 
@@ -82,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(!mRulesOpen){
             rulesTitle.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_up_24, 0);
-            rulesTextView.setVisibility(View.VISIBLE);
+            AnimationUtils.expand(rulesTextView);
             Spanned formatedText = Html.fromHtml( getString(R.string.rules));
             rulesTextView.setText(formatedText);
             mRulesOpen = true;
@@ -99,11 +102,11 @@ public class MainActivity extends AppCompatActivity {
         ImageView arrow = findViewById(R.id.show_arrow_room);
 
         if(!mRoomOpen){
-            roomCredentialRL.setVisibility(View.VISIBLE);
+            AnimationUtils.expand(roomCredentialRL);
             arrow.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_arrow_up_24));
             mRoomOpen = true;
         }else{
-            roomCredentialRL.setVisibility(View.GONE);
+            AnimationUtils.collapse(roomCredentialRL);
             arrow.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_arrow_down));
             mRoomOpen = false;
         }
