@@ -65,11 +65,11 @@ public class MainActivity extends AppCompatActivity {
     public void toggleTeamMembers(View view) {
         TextView membersTV = (TextView)view;
         if(!mTeamMembersOpen){
-            membersTV.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_down, 0);
+            membersTV.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_up_24, 0);
             recyclerView.setVisibility(View.VISIBLE);
             mTeamMembersOpen = true;
         }else{
-            membersTV.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_up_24, 0);
+            membersTV.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_down, 0);
             recyclerView.setVisibility(View.GONE);
             mTeamMembersOpen = false;
         }
@@ -81,15 +81,31 @@ public class MainActivity extends AppCompatActivity {
         TextView rulesTextView = findViewById(R.id.rules);
 
         if(!mRulesOpen){
-            rulesTitle.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_down, 0);
+            rulesTitle.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_up_24, 0);
             rulesTextView.setVisibility(View.VISIBLE);
             Spanned formatedText = Html.fromHtml( getString(R.string.rules));
             rulesTextView.setText(formatedText);
             mRulesOpen = true;
         }else{
-            rulesTitle.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_up_24, 0);
+            rulesTitle.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_down, 0);
             rulesTextView.setVisibility(View.GONE);
             mRulesOpen = false;
+        }
+
+    }
+
+    public void toggleRoomCredential(View view){
+        RelativeLayout roomCredentialRL = findViewById(R.id.roomToggleRL);
+        ImageView arrow = findViewById(R.id.show_arrow_room);
+
+        if(!mRoomOpen){
+            roomCredentialRL.setVisibility(View.VISIBLE);
+            arrow.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_arrow_up_24));
+            mRoomOpen = true;
+        }else{
+            roomCredentialRL.setVisibility(View.GONE);
+            arrow.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_arrow_down));
+            mRoomOpen = false;
         }
 
     }
@@ -108,6 +124,7 @@ public class MainActivity extends AppCompatActivity {
         RelativeLayout toggle = findViewById(R.id.relLayout6);
         ImageView arrow = findViewById(R.id.show_arrow_room);
         RelativeLayout roomCredentialRL = findViewById(R.id.roomToggleRL);
+        roomCredentialRL.setVisibility(View.GONE);
         if(toggle.getVisibility() == View.VISIBLE){
             TextView availabilityTv = findViewById(R.id.availabilityTV);
             if(real.equals("yes")){             // rooms credentials now visible
@@ -123,21 +140,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void toggleRoomCredential(View view){
-        RelativeLayout roomCredentialRL = findViewById(R.id.roomToggleRL);
-        ImageView arrow = findViewById(R.id.show_arrow_room);
 
-        if(!mRoomOpen){
-            roomCredentialRL.setVisibility(View.VISIBLE);
-            arrow.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_arrow_down));
-            mRoomOpen = true;
-        }else{
-            roomCredentialRL.setVisibility(View.GONE);
-            arrow.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_arrow_up_24));
-            mRoomOpen = false;
-        }
-
-    }
 
     private void setValues(String ... args){
         TextView mapName = findViewById(R.id.mapName); //0

@@ -14,5 +14,20 @@ announcements.
 <br>7) You may be liable for distributing false information not officially announced by PUBG in any manner that is likely to cause confusion to other end users.
 <br>8) You must notify PUBG of any glitches (such as bugs, system errors, illegal programs, etc.) of the game service and should not exploit and/or propagate such information to other users. If you discover any vulnerability and do not disclose it to PUBG and forward it to another person, you may be subject to restrictions to the use of the game services in accordance with the Rules of Conduct, which is regarded as intentional misconduct.
 <br>9) You can make inquiries, suggestions and requests related to game services through following channels. ]]></string>
+    <string name="winning_prizes_section">Winning Prizes</string>
+    <string name="prize_text">Prize:</string>
+    <string name="default_prize_first">100</string>
+    <string name="number_one">#1</string>
+    <string name="number_two">#2</string>
+    <string name="number_three">#3</string>
+    <string name="team_members_section_title">Team Members</string>
+    <string name="room_credentials_section_title">Room Credentials</string>
+    <string name="unavailable_text">Unavailable</string>
+    <string name="content_description_room_arrow">arrow to show of room credential</string>
+    <string name="room_id">Room Id</string>
+    <string name="room_id_default_value">24343434</string>
+    <string name="password">Password</string>
+    <string name="password_default_value">dga</string>
+    <string name="rules_amp_regulation_section_title"><![CDATA[Rules & Regulation]]></string>
 
 </resources>
