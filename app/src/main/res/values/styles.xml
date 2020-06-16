@@ -1,0 +1,40 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="sectionTitleTextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#838383</item>
+    </style>
+
+    <style name="titleMapDetailsTextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">#AFAFAF</item>
+    </style>
+
+    <style name="NameMapDetailsTextAppearance">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#E8E8E8</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="valueMapDetailsTextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#E8E8E8</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="prizeTextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+</resources>

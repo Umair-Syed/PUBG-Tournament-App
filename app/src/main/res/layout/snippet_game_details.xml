@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_below="@+id/textV">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="@drawable/scrim"
+            android:scaleType="centerCrop"
+            android:src="@drawable/erangel_map_crop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            android:layout_marginBottom="2dp"
+            android:textAppearance="@style/titleMapDetailsTextAppearance"
+            app:layout_constraintBottom_toTopOf="@+id/mapName"
+            app:layout_constraintStart_toStartOf="@+id/mapName" />
+
+        <TextView
+            android:id="@+id/mapName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="erangel"
+            android:textAppearance="@style/NameMapDetailsTextAppearance"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="3dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/mapName"
+            app:layout_constraintStart_toEndOf="@+id/mapName"
+            app:layout_constraintTop_toTopOf="@+id/mapName" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team"
+            android:layout_marginBottom="2dp"
+            android:textAppearance="@style/titleMapDetailsTextAppearance"
+            app:layout_constraintBottom_toTopOf="@+id/team"
+            app:layout_constraintStart_toStartOf="@+id/team" />
+
+        <TextView
+            android:id="@+id/team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="squad"
+            android:textAppearance="@style/NameMapDetailsTextAppearance"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintStart_toEndOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entry Fee"
+            android:textAppearance="@style/titleMapDetailsTextAppearance"
+            app:layout_constraintBottom_toTopOf="@+id/entryFee"
+            app:layout_constraintStart_toStartOf="@+id/mapName" />
+
+        <TextView
+            android:id="@+id/entryFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_rupee_symbol"
+            android:drawablePadding="4dp"
+            android:text="10"
+            android:textAppearance="@style/valueMapDetailsTextAppearance"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="per Member"
+            android:layout_marginStart="4dp"
+            android:textAppearance="@style/valueMapDetailsTextAppearance"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/entryFee"
+            app:layout_constraintStart_toEndOf="@+id/entryFee" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="8:00 PM"
+            android:textAppearance="@style/valueMapDetailsTextAppearance"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/mode"
+            app:layout_constraintEnd_toEndOf="@+id/date"
+            app:layout_constraintStart_toStartOf="@+id/date"
+            app:layout_constraintTop_toBottomOf="@+id/date"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="12th June"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mode"
+            android:textAppearance="@style/titleMapDetailsTextAppearance"
+            app:layout_constraintBottom_toTopOf="@+id/mode"
+            app:layout_constraintEnd_toStartOf="@+id/date"
+            app:layout_constraintStart_toEndOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TPP"
+            android:textAppearance="@style/valueMapDetailsTextAppearance"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/time"
+            app:layout_constraintEnd_toStartOf="@+id/date"
+            app:layout_constraintTop_toTopOf="@+id/date"
+            android:src="@drawable/ic_baseline_calendar_today_24"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</merge>

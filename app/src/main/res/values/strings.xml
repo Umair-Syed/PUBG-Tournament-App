@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Gamepod</string>
+    <string name="back_arrow_content_description">Back Arrow</string>
+    <string name="event_details">Event Details</string>
+    <string name="demon_gaming">Demon Gaming</string>
+
+    <string name="rules"><![CDATA[ <br>1) You are obliged to understand and comply with PUBG’s Terms of Service and Rules of Conduct.
+<br>2) The company reserves all rights about in-game data (characters, items, game currency, etc.) created by you when using the game service, and you reserve right only to use in-game data.
+<br>3) If you are unfairly treated or incurred harm using the game service, you have the right to appeal and correct PUBG through legitimate methods and procedures. If you have been unfairly treated or harmed by another customer, you have the right to notify and ask other users to comply with Rules of Conduct.
+<br>4) You have an obligation to be fully informed about the information that PUBG officially announces, and PUBG shall not be responsible for any damages incurred due to lack of awareness about the
+announcements.
+<br>5) You are not allowed to generate any profit using the game service without prior approval from PUBG.
+<br>6) You may not use the information obtained through Game Service such as copying, duplication, modification, translation, publishing or otherwise providing this information to others without prior consent from PUBG.
+<br>7) You may be liable for distributing false information not officially announced by PUBG in any manner that is likely to cause confusion to other end users.
+<br>8) You must notify PUBG of any glitches (such as bugs, system errors, illegal programs, etc.) of the game service and should not exploit and/or propagate such information to other users. If you discover any vulnerability and do not disclose it to PUBG and forward it to another person, you may be subject to restrictions to the use of the game services in accordance with the Rules of Conduct, which is regarded as intentional misconduct.
+<br>9) You can make inquiries, suggestions and requests related to game services through following channels. ]]></string>
+
+</resources>

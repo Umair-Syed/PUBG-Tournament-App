@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <include layout="@layout/snippet_toolbar" />
+
+
+        <RelativeLayout
+            android:id="@+id/relLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/textV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/circle"
+                android:drawablePadding="8dp"
+                android:padding="12dp"
+                android:text="@string/demon_gaming"
+                android:textAppearance="@style/sectionTitleTextAppearance" />
+
+            <include layout="@layout/snippet_game_details" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/titlePrize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Winning Prizes"
+                android:textAppearance="@style/sectionTitleTextAppearance" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titlePrize"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guidelineone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.45" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:drawableEnd="@drawable/ic_rupee_symbol"
+                        android:drawablePadding="4dp"
+                        android:drawableTint="@android:color/black"
+                        android:padding="6dp"
+                        android:text="Prize:"
+                        android:textAppearance="@style/prizeTextAppearance"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/firstPrize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:padding="6dp"
+                        android:paddingStart="2dp"
+                        android:text="100"
+                        android:textAppearance="@style/prizeTextAppearance"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView"
+                        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:elevation="4dp"
+                        android:text="#1"
+                        android:textColor="#FFAA00"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/guidelineone"
+                        app:layout_constraintStart_toStartOf="@+id/textView" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guidelinetwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.45" />
+
+                    <TextView
+                        android:id="@+id/textViewtwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:drawableEnd="@drawable/ic_rupee_symbol"
+                        android:drawablePadding="4dp"
+                        android:drawableTint="@android:color/black"
+                        android:padding="6dp"
+                        android:text="Prize:"
+                        android:textAppearance="@style/prizeTextAppearance"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/secondPrize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:padding="6dp"
+                        android:paddingStart="2dp"
+                        android:text="100"
+                        android:textAppearance="@style/prizeTextAppearance"
+                        app:layout_constraintBottom_toBottomOf="@+id/textViewtwo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textViewtwo"
+                        app:layout_constraintTop_toTopOf="@+id/textViewtwo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:elevation="4dp"
+                        android:text="#2"
+                        android:textColor="#FFAA00"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/guidelinetwo"
+                        app:layout_constraintStart_toStartOf="@+id/textViewtwo" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guidelinethree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.45" />
+
+                    <TextView
+                        android:id="@+id/textViewthree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:drawableEnd="@drawable/ic_rupee_symbol"
+                        android:drawablePadding="4dp"
+                        android:drawableTint="@android:color/black"
+                        android:padding="6dp"
+                        android:text="Prize:"
+                        android:textAppearance="@style/prizeTextAppearance"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/thirdPrize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:padding="6dp"
+                        android:paddingStart="2dp"
+                        android:text="100"
+                        android:textAppearance="@style/prizeTextAppearance"
+                        app:layout_constraintBottom_toBottomOf="@+id/textViewthree"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textViewthree"
+                        app:layout_constraintTop_toTopOf="@+id/textViewthree" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:elevation="4dp"
+                        android:text="#3"
+                        android:textColor="#FFAA00"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/guidelinethree"
+                        app:layout_constraintStart_toStartOf="@+id/textViewthree" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teamMembersToggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:onClick="toggleTeamMembers"
+                android:text="Team Members"
+                android:textAppearance="@style/sectionTitleTextAppearance" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/teamMembersRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary"
+            android:onClick="toggleRoomCredential">
+
+            <TextView
+                android:id="@+id/roomSectionTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Room Credentials"
+                android:textAppearance="@style/sectionTitleTextAppearance" />
+
+            <TextView
+                android:id="@+id/availabilityTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:text="Unavailable"
+                android:drawablePadding="8dp"
+                android:textAppearance="@style/valueMapDetailsTextAppearance"
+                android:textSize="12sp"
+                android:gravity="center_vertical"/>
+
+            <ImageView
+                android:id="@+id/show_arrow_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_arrow_down"/>
+
+
+            <RelativeLayout
+                android:id="@+id/roomToggleRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_below="@id/roomSectionTv">
+
+                <TextView
+                    android:id="@+id/roomIdTv"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:background="#252525"
+                    android:text="Room Id"
+                    android:textAppearance="@style/sectionTitleTextAppearance"
+                    android:textSize="13sp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="24343434"
+                    android:background="#4A4A4A"
+                    android:layout_toEndOf="@id/roomIdTv"
+                    android:gravity="center"
+                    android:textColor="#D6D6D6"
+                    android:padding="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="12dp"
+                    android:textSize="12sp"/>
+
+
+                <TextView
+                    android:id="@+id/passwordTv"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_below="@id/roomIdTv"
+                    android:background="#252525"
+                    android:text="Password"
+                    android:textAppearance="@style/sectionTitleTextAppearance"
+                    android:textSize="13sp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="dga"
+                    android:background="#4A4A4A"
+                    android:layout_toEndOf="@id/roomIdTv"
+                    android:layout_below="@id/roomIdTv"
+                    android:gravity="center"
+                    android:textColor="#D6D6D6"
+                    android:padding="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="12dp"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="20dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:onClick="toggleRules">
+
+            <TextView
+                android:id="@+id/rulesToggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:text="Rules &amp; Regulation"
+                android:textAppearance="@style/sectionTitleTextAppearance" />
+
+            <TextView
+                android:id="@+id/rules"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="#979797"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
